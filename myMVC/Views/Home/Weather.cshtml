@@ -1,0 +1,20 @@
+﻿@model List<IDS_MVC.Models.Manage_DV>
+
+@{
+    ViewBag.Title = "Weather";
+    Layout = "_Layout";
+}
+
+<h2>Manage Driver and Vechiles</h2>
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Driver</td>
+            <td>@item.Trips</td>>
+            <td>@item.Vechile</td>
+        </tr>
+    }
+
+</table>
